@@ -1,0 +1,8 @@
+{
+  "name": "mtcapp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "id": "657da315"
+}
