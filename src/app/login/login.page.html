@@ -1,0 +1,35 @@
+<ion-content container>
+  <div class="header">
+    <img src="assets/jhgov.png" alt="Jharkhand goverment logo" class="img-jhlogo">
+    <div class="lbl-logo-black">LOGIN</div>
+  </div>  
+  <div class="container-fluid">
+    <form #form="ngForm" (ngSubmit)="login()">
+      <ion-grid>
+        <ion-row color="primary" justify-content-center>
+          <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+            <div padding>
+              <ion-item>
+                <ion-icon name="person"></ion-icon>
+                <ion-input name="email" type="email" placeholder="your@email.com" [(ngModel)]="email" required></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-icon name="lock"></ion-icon>
+                <ion-input name="password" type="password" placeholder="Password" [(ngModel)]="password" required></ion-input>
+              </ion-item>
+            </div>
+            <div padding>
+              <ion-button size="large" type="submit" [disabled]="form.invalid" expand="block">Login</ion-button>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <div class="forget-link">
+             <a routerLink='/forgetpassword'>Forget Password ?</a>
+          </div>
+      </ion-row>
+      </ion-grid>
+    </form>
+  </div>
+  <div class="footer"></div>  
+</ion-content>
