@@ -1,0 +1,9 @@
+.header_curver{
+    background-color: blueviolet!important;
+    height: 4rem;
+    border-radius: 0 0 13px 13px;
+}
+
+ion-header {
+    position: static!important;
+}
