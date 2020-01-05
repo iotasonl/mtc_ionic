@@ -24,7 +24,7 @@ export class HomePage {
 
   }
 
-  // to go account pageaa
+  // to go accoufffffnt pageaa
   goToAccount() {
     //Code Here
   }
