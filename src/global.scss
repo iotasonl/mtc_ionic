@@ -24,3 +24,70 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+@import "~Bootstrap/dist/css/bootstrap.min.css";
+
+body{
+    background-color:#f3f2f4;
+}
+.header{
+    width:105%;
+    height:40%;
+    left:-3%;
+    position:absolute;
+    background-image: linear-gradient(#8459f9, #4c3196);
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+    padding-top: 10%;
+}
+.footer{
+    width:105%;
+    height:15%;
+    left:-3%;
+    position:absolute;
+    background-image: linear-gradient(#8459f9, #4c3196);
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    border-top-left-radius: 50% 20%;
+    border-top-right-radius: 50% 20%;
+    bottom: 0;
+}
+.container{
+    width:60vw;
+    height:80vh;
+    background-color:white;
+    border-radius:10px;
+    position:absolute;
+    top:50%;
+    overflow:hidden;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.header img {
+    width:90px;
+    display:block;
+    margin:auto;
+}
+.lbl-logo {
+    color: #fff;
+    display:block;
+    margin:auto;
+    text-align: center;
+    top: 10px;
+    font-size: 40px
+}
+.lbl-poweredby {
+    position:absolute;
+    color: #fff;
+    display:block;
+    bottom: 0;
+    right: 3%;
+}
+.lbl-version {
+    position:absolute;
+    color: #fff;
+    display:block;
+    bottom: 0;
+    left: 3%;
+}

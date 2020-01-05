@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 
-const apiUrl = 'http://192.168.1.31:801/mtc_new/index.php/api/login';
+// const apiUrl = 'http://192.168.1.31:801/mtc_new/index.php/api/login';
+const apiUrl = 'http://mtc.iotasonl.com/index.php/api/login';
 
 @Injectable({
   providedIn: 'root'
