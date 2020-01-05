@@ -24,13 +24,4 @@ export class HomePage {
 
   }
 
-  // to go accoufffffnt pageaa
-  goToAccount() {
-    //Code Here
-  }
-
-  presentNotifications(myEvent) {
-    //Notification Here
-  }
-
 }
