@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar class="header-bg">
+    <ion-buttons slot="start" menuToggle>
+      <ion-menu-button menu="navHome"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Discharge
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container-fluid">
+    <form #form="ngForm" (ngSubmit)="login()">
+      <ion-grid>
+        <ion-row color="primary" justify-content-left>
+          <ion-col size-md="12" size-lg="12" size-xs="12">
+            <ion-searchbar primary name="reg_no" [(ngModel)]="reg_no" placeholder="Reg No"></ion-searchbar>
+          </ion-col>
+          <ion-col size-md="12" size-lg="12" size-xs="12">
+            <ion-searchbar primary name="contact_no" [(ngModel)]="contact_no" placeholder="Contact No"></ion-searchbar>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size-md="12" size-lg="12" size-xs="12">
+            <ion-button size="small" type="submit" [disabled]="form.invalid" (click) = "search_child()" expand="block">search</ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </form>
+  </div>
+</ion-content>

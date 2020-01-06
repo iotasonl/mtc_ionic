@@ -16,6 +16,15 @@ const routes: Routes = [
     path: 'new-admission',
     loadChildren: () => import('./home/children/new-admission/new-admission.module').then( m => m.NewAdmissionPageModule)
   },
+  {
+    path: 'discharge',
+    loadChildren: () => import('./home/children/discharge/discharge.module').then( m => m.DischargePageModule)
+  },  {
+    path: 'follow-up',
+    loadChildren: () => import('./home/follow-up/follow-up.module').then( m => m.FollowUpPageModule)
+  },
+
+
 
 ];
 

@@ -1,4 +1,3 @@
-import { AnmheaderComponent } from './anmheader/anmheader.component';
 import { WebserviceService } from './webservice.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
