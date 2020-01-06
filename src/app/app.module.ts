@@ -1,4 +1,5 @@
-import { LoginService } from './login/login.service';
+import { AnmheaderComponent } from './anmheader/anmheader.component';
+import { WebserviceService } from './webservice.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
@@ -18,7 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
   providers: [
     StatusBar,
     SplashScreen,
-    LoginService,
+    WebserviceService,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]

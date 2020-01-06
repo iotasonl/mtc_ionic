@@ -1,8 +1,7 @@
 import { Router } from '@angular/router';
-import { LoginPage } from './login/login.page';
 import { Component } from '@angular/core';
 
-import { Platform, NavController } from '@ionic/angular';
+import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 
@@ -25,7 +24,7 @@ export interface MenuItem {
   styleUrls: ['app.component.scss']
 })
 export class AppComponent {
-  rootPage: any = LoginPage;
+
   appMenuItems: Array<MenuItem>;
   childCareMenuItem: Array<SubMenuItem>;
 
@@ -55,12 +54,14 @@ export class AppComponent {
       {title: 'Reports', link: '#', icon: 'podium', SubMenuItem: null },
     ];
 
-    const data = JSON.parse(localStorage.getItem('userData'));
+    const data = JSON.parse(localStorage.getItem('mtcUserData'));
     if (data != null) {
       this.userDetails = data;
       this.loggedUser =  this.userDetails.name;
       this.loggedUserRole =  this.userDetails.role_id === '1' ? 'ANM' : 'Admin';
       this.loggedUserContact = this.userDetails.phone;
+    } else {
+      this.onLogout();
     }
   }
 
@@ -81,7 +82,7 @@ export class AppComponent {
     // Clear all login data from browser's
     // localStorage and navigate to login Page
     localStorage.clear();
-    setTimeout(() => this.router.navigateByUrl(this.rootPage), 1000);
+    setTimeout(() => this.router.navigateByUrl('login'), 1000);
   }
 
 }
