@@ -96,8 +96,11 @@
           <ion-col size-md="6" size-lg="6" size-xs="6">
             <ion-label>Referred By</ion-label>
             <ion-select interface="action-sheet" class="form-control" name="referred_by" [(ngModel)]="referred_by">
-              <ion-select-option value="1">Yes</ion-select-option>
-              <ion-select-option value="2">No</ion-select-option>
+              <ion-select-option value="1">AWW</ion-select-option>
+              <ion-select-option value="2">Sahiya</ion-select-option>
+              <ion-select-option value="3">OPD</ion-select-option>
+              <ion-select-option value="4">Self</ion-select-option>
+              <ion-select-option value="5">Other</ion-select-option>
             </ion-select>
           </ion-col>
           <ion-col size-md="6" size-lg="6" size-xs="6">
@@ -106,24 +109,34 @@
           </ion-col>
           <ion-col size-md="6" size-lg="6" size-xs="6">
             <ion-label>Breast Feeding</ion-label>
-            <ion-input class="form-control" name="breast_feeding" type="text" [(ngModel)]="breast_feeding" required></ion-input>
+            <ion-select interface="action-sheet" class="form-control" name="breast_feeding" [(ngModel)]="breast_feeding">
+              <ion-select-option value="1">Yes</ion-select-option>
+              <ion-select-option value="2">No</ion-select-option>
+            </ion-select>
           </ion-col>
           <ion-col size-md="6" size-lg="6" size-xs="6">
             <ion-label>Complementry Food</ion-label>
-            <ion-input class="form-control" name="complementry_food" type="text" [(ngModel)]="complementry_food" required></ion-input>
+            <ion-select interface="action-sheet" class="form-control" name="complementry_food" [(ngModel)]="complementry_food">
+              <ion-select-option value="1">Yes</ion-select-option>
+              <ion-select-option value="2">No</ion-select-option>
+            </ion-select>
           </ion-col>
           <ion-col size-md="6" size-lg="6" size-xs="6">
             <ion-label>Date</ion-label>
-            <ion-input class="form-control" name="c_date" type="text" [(ngModel)]="c_date" required></ion-input>
+            <ion-datetime #date displayFormat="MM/DD/YYYY" class="form-control" name="c_date" [(ngModel)]="c_date"></ion-datetime>
           </ion-col>
           <ion-col size-md="6" size-lg="6" size-xs="6">
             <ion-label>Time</ion-label>
-            <ion-input class="form-control" name="c_time" type="text" [(ngModel)]="c_time" required></ion-input>
+            <ion-datetime #date displayFormat="hh:m a" class="form-control" name="c_time" [(ngModel)]="c_time"></ion-datetime>
+          </ion-col>
+          <ion-col size-md="12" size-lg="12" size-xs="12">
+            <ion-label>Image</ion-label>
+            <ion-input type="file" accept="image/*" (change)="changeListener($event)"></ion-input>
           </ion-col>
         </ion-row>
         <ion-row>
           <ion-button size="small" type="submit" [disabled]="form.invalid" expand="block">Submit</ion-button>
-      </ion-row>
+        </ion-row>
       </ion-grid>
     </form>
   </div>
