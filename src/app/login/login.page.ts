@@ -31,7 +31,6 @@ export class LoginPage implements OnInit {
     body.append('password', this.password);
 
     this.loginService.postData(body, 'login').then((result) => {
-      result = '{"status":true,"data":{"id":"1","name":"mishraaaaaa123","phone":"7004814010","email":"abc@gamail.com","password":"12","sex":"2","aadhar_number":"","pan_number":"","image":"","address":"Ratu ROad Ranchi","city":" 339","state":"20","status":"1","role_id":"1","assigned_mtc_id":"1"}}';
 
       this.responseData = JSON.parse(result);
       if (this.responseData.status) {
