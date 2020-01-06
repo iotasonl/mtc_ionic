@@ -19,11 +19,14 @@ const routes: Routes = [
   {
     path: 'discharge',
     loadChildren: () => import('./home/children/discharge/discharge.module').then( m => m.DischargePageModule)
-  },  {
+  },
+  {
     path: 'follow-up',
     loadChildren: () => import('./home/follow-up/follow-up.module').then( m => m.FollowUpPageModule)
+  },  {
+    path: 'childcaredashboard',
+    loadChildren: () => import('./home/children/childcaredashboard/childcaredashboard.module').then( m => m.ChildcaredashboardPageModule)
   },
-
 
 
 ];

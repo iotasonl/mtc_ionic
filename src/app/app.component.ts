@@ -48,7 +48,7 @@ export class AppComponent {
 
     this.appMenuItems = [
       {title: 'Home', link: 'home', icon: 'home', SubMenuItem: null },
-      {title: 'Child Care', link: '#', icon: 'person', SubMenuItem: null },
+      {title: 'Child Care', link: 'childcaredashboard', icon: 'person', SubMenuItem: null },
       {title: 'Stock', link: '#', icon: 'apps', SubMenuItem: null },
       {title: 'Utilities', link: '#', icon: 'archive', SubMenuItem: null },
       {title: 'Reports', link: '#', icon: 'podium', SubMenuItem: null },
