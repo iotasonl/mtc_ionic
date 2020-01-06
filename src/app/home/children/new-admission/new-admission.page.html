@@ -16,19 +16,19 @@
         <ion-row color="primary" justify-content-left>
           <ion-col size-md="6" size-lg="6" size-xs="6">
             <ion-label>Sam No</ion-label>
-            <ion-input class="form-control" name="sam_no" type="text" placeholder="Sam No" [(ngModel)]="sam_no" required></ion-input>
+            <ion-input class="form-control" name="sam_no" type="text" [(ngModel)]="sam_no" required></ion-input>
           </ion-col>
           <ion-col size-md="6" size-lg="6" size-xs="6">
             <ion-label>Registration No</ion-label>
-            <ion-input class="form-control" name="reg_no" type="text" placeholder="Registration No" [(ngModel)]="reg_no" required></ion-input>
+            <ion-input class="form-control" name="reg_no" type="text" [(ngModel)]="reg_no" required></ion-input>
           </ion-col>
           <ion-col size-md="6" size-lg="6" size-xs="6">
             <ion-label>Page No</ion-label>
-            <ion-input class="form-control" name="page_no" type="text" placeholder="Page No" [(ngModel)]="page_no" required></ion-input>
+            <ion-input class="form-control" name="page_no" type="text" [(ngModel)]="page_no" required></ion-input>
           </ion-col>
           <ion-col size-md="6" size-lg="6" size-xs="6">
             <ion-label>Child Name</ion-label>
-            <ion-input class="form-control" name="child_name" type="text" placeholder="Child Name" [(ngModel)]="child_name" required></ion-input>
+            <ion-input class="form-control" name="child_name" type="text" [(ngModel)]="child_name" required></ion-input>
           </ion-col>
           <ion-col size-md="6" size-lg="6" size-xs="6">
             <ion-label>Date of Birth</ion-label>
@@ -37,21 +37,89 @@
           <ion-col size-md="6" size-lg="6" size-xs="6">
             <ion-label>Gender</ion-label>
             <ion-select interface="action-sheet" class="form-control">
-              <ion-select-option value="0">Male</ion-select-option>
-              <ion-select-option value="1">Female</ion-select-option>
+              <ion-select-option value="1">Male</ion-select-option>
+              <ion-select-option value="2">Female</ion-select-option>
             </ion-select>
           </ion-col>
           <ion-col size-md="6" size-lg="6" size-xs="6">
             <ion-label>Caste</ion-label>
             <ion-select interface="action-sheet" class="form-control">
-              <ion-select-option value="0">ST</ion-select-option>
-              <ion-select-option value="1">SC</ion-select-option>
-              <ion-select-option value="2">OBC</ion-select-option>
-              <ion-select-option value="3">General</ion-select-option>
+              <ion-select-option value="1">ST</ion-select-option>
+              <ion-select-option value="2">SC</ion-select-option>
+              <ion-select-option value="3">OBC</ion-select-option>
               <ion-select-option value="4">Other</ion-select-option>
             </ion-select>
           </ion-col>
-          
+          <ion-col size-md="6" size-lg="6" size-xs="6">
+            <ion-label>Age</ion-label>
+            <ion-input class="form-control" name="age" type="text" [(ngModel)]="age" required></ion-input>
+          </ion-col>
+          <ion-col size-md="6" size-lg="6" size-xs="6">
+            <ion-label>Parent Name</ion-label>
+            <ion-input class="form-control" name="parent_name" type="text" [(ngModel)]="parent_name" required></ion-input>
+          </ion-col>
+          <ion-col size-md="6" size-lg="6" size-xs="6">
+            <ion-label>Contact Number</ion-label>
+            <ion-input class="form-control" name="contact_number" type="text" [(ngModel)]="contact_number" required></ion-input>
+          </ion-col>
+          <ion-col size-md="6" size-lg="6" size-xs="6">
+            <ion-label>Address</ion-label>
+            <ion-input class="form-control" name="address" type="text" [(ngModel)]="address" required></ion-input>
+          </ion-col>
+          <ion-col size-md="6" size-lg="6" size-xs="6">
+            <ion-label>Division</ion-label>
+            <ion-input class="form-control" name="division" type="text" [(ngModel)]="division" required></ion-input>
+          </ion-col>
+          <ion-col size-md="6" size-lg="6" size-xs="6">
+            <ion-label>Block</ion-label>
+            <ion-select interface="action-sheet" class="form-control" name="block" [(ngModel)]="block">
+              <ion-select-option value="0">block name</ion-select-option>
+            </ion-select>
+          </ion-col>
+          <ion-col size-md="6" size-lg="6" size-xs="6">
+            <ion-label>Panchayat</ion-label>
+            <ion-select interface="action-sheet" class="form-control" name="panchayat" [(ngModel)]="panchayat">
+              <ion-select-option value="0">panchayat name</ion-select-option>
+            </ion-select>
+          </ion-col>
+          <ion-col size-md="6" size-lg="6" size-xs="6">
+            <ion-label>BPL</ion-label>
+            <ion-select interface="action-sheet" class="form-control" name="bpl" [(ngModel)]="bpl">
+              <ion-select-option value="1">Yes</ion-select-option>
+              <ion-select-option value="2">No</ion-select-option>
+            </ion-select>
+          </ion-col>
+          <ion-col size-md="6" size-lg="6" size-xs="6">
+            <ion-label>BPL No</ion-label>
+            <ion-input class="form-control" name="bpl_no" type="text" [(ngModel)]="bpl_no" required></ion-input>
+          </ion-col>
+          <ion-col size-md="6" size-lg="6" size-xs="6">
+            <ion-label>Referred By</ion-label>
+            <ion-select interface="action-sheet" class="form-control" name="referred_by" [(ngModel)]="referred_by">
+              <ion-select-option value="1">Yes</ion-select-option>
+              <ion-select-option value="2">No</ion-select-option>
+            </ion-select>
+          </ion-col>
+          <ion-col size-md="6" size-lg="6" size-xs="6">
+            <ion-label>Referred Contact No</ion-label>
+            <ion-input class="form-control" name="referred_contact" type="text" [(ngModel)]="referred_contact" required></ion-input>
+          </ion-col>
+          <ion-col size-md="6" size-lg="6" size-xs="6">
+            <ion-label>Breast Feeding</ion-label>
+            <ion-input class="form-control" name="breast_feeding" type="text" [(ngModel)]="breast_feeding" required></ion-input>
+          </ion-col>
+          <ion-col size-md="6" size-lg="6" size-xs="6">
+            <ion-label>Complementry Food</ion-label>
+            <ion-input class="form-control" name="complementry_food" type="text" [(ngModel)]="complementry_food" required></ion-input>
+          </ion-col>
+          <ion-col size-md="6" size-lg="6" size-xs="6">
+            <ion-label>Date</ion-label>
+            <ion-input class="form-control" name="c_date" type="text" [(ngModel)]="c_date" required></ion-input>
+          </ion-col>
+          <ion-col size-md="6" size-lg="6" size-xs="6">
+            <ion-label>Time</ion-label>
+            <ion-input class="form-control" name="c_time" type="text" [(ngModel)]="c_time" required></ion-input>
+          </ion-col>
         </ion-row>
         <ion-row>
           <ion-button size="small" type="submit" [disabled]="form.invalid" expand="block">Submit</ion-button>
