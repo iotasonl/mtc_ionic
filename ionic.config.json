@@ -1,7 +1,8 @@
 {
   "name": "mtcapp",
   "integrations": {
-    "cordova": {}
+    "cordova": {},
+    "capacitor": {}
   },
   "type": "angular",
   "id": "657da315"
