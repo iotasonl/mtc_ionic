@@ -8,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SplashPage implements OnInit {
 
-  constructor(private router: Router) { this.loadSplashScreen();
+  constructor(private router: Router) {
+    this.loadSplashScreen();
+    localStorage.clear();
   }
 
   ngOnInit() {
